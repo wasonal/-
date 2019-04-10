@@ -16,5 +16,4 @@
 session在用户端保存在cookie中，document.cookie可以直接获取到当前页面的cookie,且会默认跟随路径符合path的请求一同发出   
 
 那么我可不可以让这个session只放到客户端保存
-于是就有了[token][1]
-[1]:token.md
+于是就有了[token](token.md)
