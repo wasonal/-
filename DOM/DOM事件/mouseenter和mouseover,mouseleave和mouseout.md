@@ -21,4 +21,4 @@
     }
 </script>
 ```
-![avatar](../../piture/mouseEvent_1.png)
+![Alt text](../../picture/mouseEvent_1.png)
