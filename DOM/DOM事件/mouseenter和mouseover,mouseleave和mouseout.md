@@ -23,8 +23,8 @@
 ```
 ![Alt text](../../picture/mouseEvent_1.png)
 ## 触发条件
-按照**介绍**中给出的定义
-不论鼠标指针穿过被选元素或其子元素、孙元素，都会触发mouseover事件
+按照**介绍**中给出的定义   
+不论鼠标指针穿过被选元素或其子元素、孙元素，都会触发mouseover事件   
 只有鼠标指针穿过被选元素时，才会触发mouseenter事件
 ![Alt text](../../picture/mouseEvent_2.png)
 ```
@@ -49,8 +49,8 @@
         bindEvent(div[1], 'mouseenter', 'mouseenter');
     </script>
 ```
-按照**介绍**中给出的定义
-只有鼠标指针穿过被选元素时，才会触发mouseleave事件
+按照**介绍**中给出的定义   
+只有鼠标指针穿过被选元素时，才会触发mouseleave事件   
 不论鼠标指针穿过被选元素或其子元素、孙元素，都会触发mouseout事件
 ![Alt text](../../picture/mouseEvent_3.png)
 ```
