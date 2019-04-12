@@ -56,16 +56,6 @@ mouse**out** | 鼠标指针穿过被选元素**或其子元素、孙元素**| �
     bindEvent(div[1], 'mouseenter', 'mouseenter');
 </script>
 ```
-<center><font size="1">运动轨迹</font></center>
-
-![Alt text](../../picture/mouseEvent_2.png)
-<center><font size="1">触发说明</font></center>
-
-![Alt text](../../picture/mouseEvent_5.png)
-
-<font size="2">Tips:图中的每一个独立箭头都会触发以此对应的事件</font>   
-
----
 按照**介绍**中给出的定义   
 只有鼠标指针穿过被选元素时，才会触发mouseleave事件   
 不论鼠标指针穿过被选元素或其子元素、孙元素，都会触发mouseout事件
