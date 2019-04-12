@@ -1,9 +1,9 @@
 # 细说mouseenter和mouseover，mouseout和mouseleave的区别
 ## 介绍（MDN）
-**mouseover**：当指针设备移动到存在监听器的元素或其子元素的时候，mouseover事件就会被触发。
+**mouseover**：当指针设备移动到存在监听器的元素或其子元素的时候，mouseover事件就会被触发。   
 **mouseenter**：当定点设备（通常指鼠标）移动到元素上时就会触发 mouseenter 事件
 
-**mouseout**：事件在当指针设备（通常是鼠标）移出了附加侦听器的元素或关闭了它的一个子元素时触发。
+**mouseout**：事件在当指针设备（通常是鼠标）移出了附加侦听器的元素或关闭了它的一个子元素时触发。   
 **mouseleave**：指点设备（通常是鼠标）的指针移出某个元素时，会触发mouseleave事件。
 ## 异同（简略版）
 &nbsp; | 触发条件 | 是否冒泡 
@@ -70,18 +70,18 @@ mouse**out** | 鼠标指针穿过被选元素**或其子元素、孙元素**| �
 
 <center><font size="1">触发说明</font></center>
 
-![Alt text](../../picture/mouseEvent_3.png)
+![Alt text](../../picture/mouseEvent_3.png)   
 <font size="2">Tips:图中的每一个独立箭头都会触发以此对应的事件<font>
 
 ## 冒泡
 mouseenter事件不冒泡
-![Alt text](../../picture/mouseEvent_6.png)
+![Alt text](../../picture/mouseEvent_6.png)   
 mouseleave事件不冒泡
-![Alt text](../../picture/mouseEvent_7.png)
+![Alt text](../../picture/mouseEvent_7.png)   
 mouseover事件冒泡
-![Alt text](../../picture/mouseEvent_8.png)
+![Alt text](../../picture/mouseEvent_8.png)   
 mouseout事件冒泡
-![Alt text](../../picture/mouseEvent_9.png)
+![Alt text](../../picture/mouseEvent_9.png)   
 ```
 <div class="outer">
     <div class="inner">
