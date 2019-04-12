@@ -48,3 +48,11 @@ foo();
 ```
 自己做了个测试，发现严格模式会创建eval作用域是针对直接调用来说的；   
 当使用间接调用的时候，eval还是使用全局的作用域
+```
+function foo(){
+    "use strict";
+    window.eval("var a=1;");
+}
+foo();
+console.log(a);//不报错，而是输出1
+```
