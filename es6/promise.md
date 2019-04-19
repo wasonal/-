@@ -1,5 +1,15 @@
 ## Promise
-
+### 链式调用
+```
+//p1,p2,p3均为Promise对象
+p1.then((data)=>{
+    console.log(data);
+    return p2;
+}).then((data)=>{
+    console.log(data);
+    return p3;
+})
+```
 ### 方法
 #### Promise.all(iterable)「谁跑的慢，以谁为准执行回调」
 用于将多个Promise实例包装成一个新的Promise实例   
@@ -50,6 +60,7 @@ Promise.race([p1,p2]).then((result)=>{
 应用场景：可以给某个异步操作设置超时时间，并且在超时后执行相应的操作
 
 ### return,resolve,reject
+在Promise中的resolve或reject，仅仅是将Promise的状态置为fulfilled或rejected，并没有结束当前的代码，如果后续有代码的话会继续执行，例子如下
 ```
 function foo(){
     return new Promise(function(res, rej){
