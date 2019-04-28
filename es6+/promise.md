@@ -37,7 +37,30 @@ Promise.all([p1,p2,,p3]).then((result)=>{
     console.log(error);//输出'fail'
 })
 ```
-应用场景：一个页面上需要等待两个或多个ajax的数据回来以后才正常显示
+应用场景：一个页面上需要等待两个或多个ajax的数据回来以后才正常显示   
+**简单实现**
+```
+Promise.prototype.fakeAll = function(promiseArr){
+    return Promise(function(resolve, reject){
+        var resolveCounter = 0;//返回值计数器
+        var promiseLen = promiseArr.length;
+        var resolveValues = new Array(promiseLen);//返回数组
+        for(var i=0; i<promiseLen; i++){
+            (function(i){
+                Promise.resolve(promiseArr[i]).then(function(value){
+                    resolveCounter++;
+                    resolveValues[i] = value;
+                    if(resolveCounter == promiseLen){
+                        return resolve(resolveValues);
+                    }
+                },function(error){
+                    return reject(reason);
+                })
+            })(i)
+        }
+    })
+}
+```
 #### Promise.race(iterable)「谁跑的快，以谁为准执行回调」
 返回多个Promise实例中返回最快的实例
 ```
