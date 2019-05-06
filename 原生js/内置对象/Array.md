@@ -1,3 +1,10 @@
+判断一个值是否为数组
+```
+function isArray(testValue){
+    return Object.prototype.toString.call(testValue) === "[object Array]";
+}
+```
+
 # Array
 ## fill方法
 Array.prototype.fill(value[, start[, end]])用一个固定值填充一个数组中从起始索引到终止索引内的全部元素   

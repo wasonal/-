@@ -1,0 +1,9 @@
+假值
+值|类型
+:--|:--
+0|Number
+NaN|Number
+''|String
+false|Boolean
+null|Object
+undefined|Undefined
