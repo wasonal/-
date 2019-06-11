@@ -1,0 +1,1 @@
+cursor:not-allowed会在设置了pointer-events:none;的情况下失效
