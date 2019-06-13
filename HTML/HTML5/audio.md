@@ -1,0 +1,2 @@
+在chrome中
+用document.getElementId获取audio元素，autoplay会失效

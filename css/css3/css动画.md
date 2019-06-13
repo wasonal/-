@@ -60,6 +60,8 @@ animation-iteration-count|动画播放次数|n播放n次、infinite播放无限�
 animation-direction|动画播放方向|normal正常播放、alternate正反向轮流播放
 animation-fill-mode|动画执行前后的目标样式|none动画执行前后不改变样式、forwards保持最后一帧的样式、backwards保持第一帧的样式、both设置forwards和backwards
 animation-direction|动画是否暂停或运行|paused停止动画、running运行动画
+#### 注意
+父元素的display属性none和其他属性切换触发amination
 
 #### 动画事件AnimationEvent
 animationstart| animationend| animationiteration
