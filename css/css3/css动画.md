@@ -93,5 +93,14 @@ y-axis|基点的y坐标(默认50%)
 z-axis|基点的z坐标(默认0)
 #### 与amination的共同使用
 transform会失效
+#### backface-visibility
+指定当元素背面朝向观察者时是否可见   
+这个属性一般与transform的三维元素一同使用   
+属性|描述
+:--|:--
+visible（默认值）|可见
+hidden|不可见
+
+
 参考链接：[CSS3动画理解与应用](https://www.cnblogs.com/jingwhale/p/4641385.html)   
 [CSS3中的变形](https://www.cnblogs.com/starof/p/4560076.html)
