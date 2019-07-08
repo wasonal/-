@@ -32,3 +32,8 @@ HTTP1.x的解析是基于文本。基于文本协议的格式解析存在天然�
 通过整数认证客户端访问的是自己的服务器
 3. **保护数据完整性**   
 防止传输内容被中间人冒充或者篡改
+
+
+
+
+https://fyd.163.com/teamfriend/m/?pid=jejjjdjhjajajcjfjwjvjvjyjzjvjxjuiiie%26iId=25900262%26dId=20000152%26type=1%26lTp=CN%26nm=3254%26sId=1&fbclid=IwAR2d2_0r_iw7Sbn3RfIFdzQrMPCp4yUwgQdcQxhnhWVqWlE1zzDpwSXA1yQ
