@@ -11,3 +11,8 @@
 ```
 2、设置img标签的父级font-size:0;
 3、设置img标签display:block;float:left;
+
+### 设置input标签placeholder字体的颜色
+::-webkit-input-placeholder，:-moz-placeholder， ::-moz-placeholder， :-ms-input-placeholder{
+    color: #fff;
+}
