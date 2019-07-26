@@ -16,3 +16,18 @@
 ::-webkit-input-placeholder，:-moz-placeholder， ::-moz-placeholder， :-ms-input-placeholder{
     color: #fff;
 }
+
+### IE11 浏览器，元素背景，使用background-attachment:fixed属性，页面滚动时，元素会出现上下抖动的问题
+css
+```
+html{
+    overflow:hidden;
+    height: 100%;
+}
+body{
+    overflow:auto;
+    height: 100%;
+}
+```
+https://www.coffeecup.com/help/articles/solving-the-ie11-fixed-background-bug/
+https://stackoverflow.com/questions/27966735/why-does-a-fixed-background-image-move-when-scrolling-on-ie
