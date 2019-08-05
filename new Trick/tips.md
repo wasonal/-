@@ -1,0 +1,3 @@
+safari的cookie写入限制
+如果没有访问过163.com，iframe则不给写入cookie
+
