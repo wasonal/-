@@ -70,7 +70,7 @@ animationstart| animationend| animationiteration
 
 ### transform
 #### 介绍
-transform属性允许我们对**块级元素**进行旋转、缩放、倾斜   
+transform属性允许我们对**块级元素**进行旋转、缩放、倾斜、平移而不会触发浏览器重绘   
 transform:transform-function
 function-name|描述
 :--|:--
@@ -101,6 +101,7 @@ transform会失效
 visible（默认值）|可见
 hidden|不可见
 
+opacity:1和-webkit-backface-visibility在安卓上可以开启硬件加速
 
 参考链接：[CSS3动画理解与应用](https://www.cnblogs.com/jingwhale/p/4641385.html)   
 [CSS3中的变形](https://www.cnblogs.com/starof/p/4560076.html)
