@@ -10,6 +10,37 @@ for (let i = 0; i < 3; i++) {
 // abc
 // abc
 ```
+而且每次迭代循环时都创建一个新变量，并以之前迭代中同名变量的值将其初始化
+即这样一段代码
+```
+var funcs = [];
+for (let i = 0; i < 3; i++) {
+    funcs[i] = function () {
+        console.log(i);
+    };
+}
+```
+等同于
+```
+// 伪代码
+(let i = 0) {
+    funcs[0] = function() {
+        console.log(i)
+    };
+}
+
+(let i = 1) {
+    funcs[1] = function() {
+        console.log(i)
+    };
+}
+
+(let i = 2) {
+    funcs[2] = function() {
+        console.log(i)
+    };
+};
+```
 3. 不存在变量提升
 4. 不允许重复声明
 
