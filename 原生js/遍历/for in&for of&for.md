@@ -54,6 +54,18 @@ for(var key of Object.keys(obj)){
 }依此输出'name','age'
 ```
 for,for...in,for...of均可使用break,continue来跳出循环
+
+## 迭代器
+```
+let arr = [1, 2, 3]
+let it = arr[Symbol.iterator]()
+
+it.next() // { value: 1, done: false }
+it.next() // { value: 2, done: false }
+it.next() // { value: 3, done: false }
+it.next() // { value: undefined, done: true }
+```
+
 ## 总结
 遍历值
 > for...in遍历的是对象可迭代，自身或继承的属性名
